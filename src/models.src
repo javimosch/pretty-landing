@@ -127,7 +127,7 @@ func app_view(unused) (h) {
     h = h + cta
 
     // footer
-    h = h + ui_footer("&copy; 2026 Aurora &mdash; a demo landing built with machin-web-ui. Not a real product.",
-        []string{"Features", "Pricing", "FAQ", "machin-web-ui"},
-        []string{"#features", "#pricing", "#faq", "https://github.com/javimosch/machin-web-ui"})
+    h = h + ui_footer("&copy; 2026 Aurora &mdash; a demo landing built with <a class=\"text-accent hover:underline\" href=\"https://github.com/javimosch/machin-web-ui\">machin-web-ui</a>. Not a real product.",
+        []string{"Features", "Pricing", "FAQ", "Source", "machin-web-ui"},
+        []string{"#features", "#pricing", "#faq", "https://github.com/javimosch/pretty-landing", "https://github.com/javimosch/machin-web-ui"})
 }

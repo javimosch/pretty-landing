@@ -12,3 +12,7 @@ MACHIN_WEB_UI=/path/to/machin-web-ui ./build.sh   # needs machin + zig
 ./app                                             # http://localhost:48100
 ./export.sh                                       # static -> docs/ (GitHub Pages)
 ```
+
+## Built with
+
+[**machin-web-ui**](https://github.com/javimosch/machin-web-ui) — the agent-first design system for isomorphic machin apps (pure-MFL Tailwind engine, vendored components, verified theming).
