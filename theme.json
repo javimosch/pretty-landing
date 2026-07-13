@@ -1,0 +1,15 @@
+{
+ "canvas": "#f8fafc",
+ "surface": "#ffffff",
+ "ink": "#0f172a",
+ "muted": "#64748b",
+ "line": "#e2e8f0",
+ "accent": "#7c3aed",
+ "ok": "@green-600",
+ "warn": "@amber-500",
+ "danger": "@red-600",
+ "info": "#2563eb",
+ "radius": "",
+ "fontSans": "",
+ "fontMono": ""
+}

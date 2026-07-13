@@ -1,0 +1,1497 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Aurora</title><style>*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
+}
+
+/*
+! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
+*/
+
+html,
+:host {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font-family by default.
+2. Use the user's configured `mono` font-feature-settings by default.
+3. Use the user's configured `mono` font-variation-settings by default.
+4. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-feature-settings: normal;
+  /* 2 */
+  font-variation-settings: normal;
+  /* 3 */
+  font-size: 1em;
+  /* 4 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden]:where(:not([hidden="until-found"])) {
+  display: none;
+}
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}
+.absolute {
+  position: absolute
+}
+.bg-accent {
+  --tw-bg-opacity: 1;
+  background-color: rgb(124 58 237 / var(--tw-bg-opacity, 1))
+}
+.bg-accent-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(233 222 252 / var(--tw-bg-opacity, 1))
+}
+.bg-canvas {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity, 1))
+}
+.bg-canvas\/80 {
+  background-color: rgb(248 250 252 / 0.8)
+}
+.bg-clip-text {
+  -webkit-background-clip: text;
+          background-clip: text
+}
+.bg-danger-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 242 242 / var(--tw-bg-opacity, 1))
+}
+.bg-danger-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity, 1))
+}
+.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops))
+}
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops))
+}
+.bg-info-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 254 / var(--tw-bg-opacity, 1))
+}
+.bg-ink {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1))
+}
+.bg-line {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity, 1))
+}
+.bg-ok-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 253 244 / var(--tw-bg-opacity, 1))
+}
+.bg-surface {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1))
+}
+.bg-surface-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 237 237 / var(--tw-bg-opacity, 1))
+}
+.bg-warn-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 251 235 / var(--tw-bg-opacity, 1))
+}
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1))
+}
+.border {
+  border-width: 1px
+}
+.border-2 {
+  border-width: 2px
+}
+.border-accent {
+  --tw-border-opacity: 1;
+  border-color: rgb(124 58 237 / var(--tw-border-opacity, 1))
+}
+.border-ink {
+  --tw-border-opacity: 1;
+  border-color: rgb(15 23 42 / var(--tw-border-opacity, 1))
+}
+.border-line {
+  --tw-border-opacity: 1;
+  border-color: rgb(226 232 240 / var(--tw-border-opacity, 1))
+}
+.border-line-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(178 194 215 / var(--tw-border-opacity, 1))
+}
+.border-white\/30 {
+  border-color: rgb(255 255 255 / 0.3)
+}
+.cursor-pointer {
+  cursor: pointer
+}
+.fixed {
+  position: fixed
+}
+.flex {
+  display: flex
+}
+.flex-1 {
+  flex: 1 1 0%
+}
+.flex-col {
+  flex-direction: column
+}
+.flex-wrap {
+  flex-wrap: wrap
+}
+.font-bold {
+  font-weight: 700
+}
+.font-medium {
+  font-weight: 500
+}
+.font-semibold {
+  font-weight: 600
+}
+.from-accent {
+  --tw-gradient-from: #7c3aed var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(124 58 237 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)
+}
+.from-accent-600 {
+  --tw-gradient-from: #5e14dc var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(94 20 220 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)
+}
+.from-ink {
+  --tw-gradient-from: #0f172a var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(15 23 42 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to)
+}
+.gap-1 {
+  gap: 0.25rem
+}
+.gap-1\.5 {
+  gap: 0.375rem
+}
+.gap-2 {
+  gap: 0.5rem
+}
+.gap-2\.5 {
+  gap: 0.625rem
+}
+.gap-3 {
+  gap: 0.75rem
+}
+.gap-4 {
+  gap: 1rem
+}
+.gap-5 {
+  gap: 1.25rem
+}
+.gap-6 {
+  gap: 1.5rem
+}
+.gap-8 {
+  gap: 2rem
+}
+.grid {
+  display: grid
+}
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr))
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr))
+}
+.h-1\.5 {
+  height: 0.375rem
+}
+.h-10 {
+  height: 2.5rem
+}
+.h-4 {
+  height: 1rem
+}
+.h-6 {
+  height: 1.5rem
+}
+.h-7 {
+  height: 1.75rem
+}
+.h-9 {
+  height: 2.25rem
+}
+.h-px {
+  height: 1px
+}
+.hidden {
+  display: none
+}
+.inline-flex {
+  display: inline-flex
+}
+.items-center {
+  align-items: center
+}
+.items-end {
+  align-items: flex-end
+}
+.items-start {
+  align-items: flex-start
+}
+.justify-between {
+  justify-content: space-between
+}
+.justify-center {
+  justify-content: center
+}
+.leading-6 {
+  line-height: 1.5rem
+}
+.leading-7 {
+  line-height: 1.75rem
+}
+.leading-tight {
+  line-height: 1.25
+}
+.max-w-2xl {
+  max-width: 42rem
+}
+.max-w-3xl {
+  max-width: 48rem
+}
+.max-w-6xl {
+  max-width: 72rem
+}
+.max-w-full {
+  max-width: 100%
+}
+.max-w-lg {
+  max-width: 32rem
+}
+.max-w-xl {
+  max-width: 36rem
+}
+.min-h-screen {
+  min-height: 100vh
+}
+.overflow-hidden {
+  overflow: hidden
+}
+.p-10 {
+  padding: 2.5rem
+}
+.p-5 {
+  padding: 1.25rem
+}
+.p-6 {
+  padding: 1.5rem
+}
+.p-7 {
+  padding: 1.75rem
+}
+.pointer-events-auto {
+  pointer-events: auto
+}
+.pointer-events-none {
+  pointer-events: none
+}
+.relative {
+  position: relative
+}
+.ring {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)
+}
+.rounded {
+  border-radius: 0.25rem
+}
+.rounded-2xl {
+  border-radius: 1rem
+}
+.rounded-3xl {
+  border-radius: 1.5rem
+}
+.rounded-full {
+  border-radius: 9999px
+}
+.rounded-lg {
+  border-radius: 0.5rem
+}
+.rounded-md {
+  border-radius: 0.375rem
+}
+.rounded-xl {
+  border-radius: 0.75rem
+}
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+.shrink-0 {
+  flex-shrink: 0
+}
+.static {
+  position: static
+}
+.sticky {
+  position: sticky
+}
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem
+}
+.text-accent {
+  --tw-text-opacity: 1;
+  color: rgb(124 58 237 / var(--tw-text-opacity, 1))
+}
+.text-accent-700 {
+  --tw-text-opacity: 1;
+  color: rgb(78 17 182 / var(--tw-text-opacity, 1))
+}
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem
+}
+.text-center {
+  text-align: center
+}
+.text-danger-800 {
+  --tw-text-opacity: 1;
+  color: rgb(153 27 27 / var(--tw-text-opacity, 1))
+}
+.text-info-600 {
+  --tw-text-opacity: 1;
+  color: rgb(20 83 220 / var(--tw-text-opacity, 1))
+}
+.text-info-800 {
+  --tw-text-opacity: 1;
+  color: rgb(13 53 140 / var(--tw-text-opacity, 1))
+}
+.text-ink {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity, 1))
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem
+}
+.text-muted {
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity, 1))
+}
+.text-muted-400 {
+  --tw-text-opacity: 1;
+  color: rgb(154 166 182 / var(--tw-text-opacity, 1))
+}
+.text-muted-600 {
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity, 1))
+}
+.text-muted\/70 {
+  color: rgb(100 116 139 / 0.7)
+}
+.text-ok-700 {
+  --tw-text-opacity: 1;
+  color: rgb(21 128 61 / var(--tw-text-opacity, 1))
+}
+.text-ok-800 {
+  --tw-text-opacity: 1;
+  color: rgb(22 101 52 / var(--tw-text-opacity, 1))
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem
+}
+.text-transparent {
+  color: transparent
+}
+.text-warn-800 {
+  --tw-text-opacity: 1;
+  color: rgb(146 64 14 / var(--tw-text-opacity, 1))
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1))
+}
+.text-white\/60 {
+  color: rgb(255 255 255 / 0.6)
+}
+.text-white\/80 {
+  color: rgb(255 255 255 / 0.8)
+}
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem
+}
+.to-accent-800 {
+  --tw-gradient-to: #3c0d8c var(--tw-gradient-to-position)
+}
+.to-info {
+  --tw-gradient-to: #2563eb var(--tw-gradient-to-position)
+}
+.to-ink-800 {
+  --tw-gradient-to: #283e71 var(--tw-gradient-to-position)
+}
+.tracking-tight {
+  letter-spacing: -0.025em
+}
+.tracking-wider {
+  letter-spacing: 0.05em
+}
+.tracking-widest {
+  letter-spacing: 0.1em
+}
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms
+}
+.uppercase {
+  text-transform: uppercase
+}
+.visible {
+  visibility: visible
+}
+.w-1\.5 {
+  width: 0.375rem
+}
+.w-10 {
+  width: 2.5rem
+}
+.w-6 {
+  width: 1.5rem
+}
+.w-7 {
+  width: 1.75rem
+}
+.w-80 {
+  width: 20rem
+}
+.w-9 {
+  width: 2.25rem
+}
+.w-full {
+  width: 100%
+}
+.w-px {
+  width: 1px
+}
+.z-40 {
+  z-index: 40
+}
+.z-50 {
+  z-index: 50
+}
+.-mx-6 {
+  margin-left: -1.5rem;
+  margin-right: -1.5rem
+}
+.border-y {
+  border-top-width: 1px;
+  border-bottom-width: 1px
+}
+.gap-x-10 {
+  -moz-column-gap: 2.5rem;
+  column-gap: 2.5rem
+}
+.gap-y-3 {
+  row-gap: 0.75rem
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto
+}
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem
+}
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem
+}
+.px-2\.5 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem
+}
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem
+}
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem
+}
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem
+}
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem
+}
+.py-0\.5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem
+}
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem
+}
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem
+}
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem
+}
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem
+}
+.py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem
+}
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem
+}
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem
+}
+.-top-3 {
+  top: -0.75rem
+}
+.border-b {
+  border-bottom-width: 1px
+}
+.border-l-2 {
+  border-left-width: 2px
+}
+.border-l-danger-600 {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(220 38 38 / var(--tw-border-opacity, 1))
+}
+.border-l-muted-400 {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(154 166 182 / var(--tw-border-opacity, 1))
+}
+.border-l-ok-600 {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(22 163 74 / var(--tw-border-opacity, 1))
+}
+.border-t {
+  border-top-width: 1px
+}
+.bottom-4 {
+  bottom: 1rem
+}
+.left-1\/2 {
+  left: 50%
+}
+.mb-1\.5 {
+  margin-bottom: 0.375rem
+}
+.mb-2 {
+  margin-bottom: 0.5rem
+}
+.mb-3 {
+  margin-bottom: 0.75rem
+}
+.mb-4 {
+  margin-bottom: 1rem
+}
+.mt-1 {
+  margin-top: 0.25rem
+}
+.mt-10 {
+  margin-top: 2.5rem
+}
+.mt-2 {
+  margin-top: 0.5rem
+}
+.mt-3 {
+  margin-top: 0.75rem
+}
+.mt-6 {
+  margin-top: 1.5rem
+}
+.pb-1 {
+  padding-bottom: 0.25rem
+}
+.pb-4 {
+  padding-bottom: 1rem
+}
+.pt-2 {
+  padding-top: 0.5rem
+}
+.pt-5 {
+  padding-top: 1.25rem
+}
+.right-4 {
+  right: 1rem
+}
+.top-0 {
+  top: 0px
+}
+@media (prefers-color-scheme: dark) {
+.dark\:bg-canvas-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 36 50 / var(--tw-bg-opacity, 1))
+}
+}
+@media (prefers-color-scheme: dark) {
+.dark\:bg-danger-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(69 10 10 / var(--tw-bg-opacity, 1))
+}
+}
+@media (prefers-color-scheme: dark) {
+.dark\:bg-info-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(6 25 65 / var(--tw-bg-opacity, 1))
+}
+}
+@media (prefers-color-scheme: dark) {
+.dark\:bg-ink-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 234 246 / var(--tw-bg-opacity, 1))
+}
+}
+@media (prefers-color-scheme: dark) {
+.dark\:bg-ok-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(5 46 22 / var(--tw-bg-opacity, 1))
+}
+}
+@media (prefers-color-scheme: dark) {
+.dark\:bg-surface-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(99 99 99 / var(--tw-bg-opacity, 1))
+}
+}
+@media (prefers-color-scheme: dark) {
+.dark\:bg-surface-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(77 77 77 / var(--tw-bg-opacity, 1))
+}
+}
+@media (prefers-color-scheme: dark) {
+.dark\:bg-surface-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(56 56 56 / var(--tw-bg-opacity, 1))
+}
+}
+@media (prefers-color-scheme: dark) {
+.dark\:bg-warn-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(69 26 3 / var(--tw-bg-opacity, 1))
+}
+}
+@media (prefers-color-scheme: dark) {
+.dark\:border-ink-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(229 234 246 / var(--tw-border-opacity, 1))
+}
+}
+@media (prefers-color-scheme: dark) {
+.dark\:border-line-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(68 95 131 / var(--tw-border-opacity, 1))
+}
+}
+@media (prefers-color-scheme: dark) {
+.dark\:border-line-800 {
+  --tw-border-opacity: 1;
+  border-color: rgb(52 73 101 / var(--tw-border-opacity, 1))
+}
+}
+@media (prefers-color-scheme: dark) {
+.dark\:text-danger-300 {
+  --tw-text-opacity: 1;
+  color: rgb(252 165 165 / var(--tw-text-opacity, 1))
+}
+}
+@media (prefers-color-scheme: dark) {
+.dark\:text-info-300 {
+  --tw-text-opacity: 1;
+  color: rgb(148 178 245 / var(--tw-text-opacity, 1))
+}
+}
+@media (prefers-color-scheme: dark) {
+.dark\:text-ink-100 {
+  --tw-text-opacity: 1;
+  color: rgb(229 234 246 / var(--tw-text-opacity, 1))
+}
+}
+@media (prefers-color-scheme: dark) {
+.dark\:text-ink-900 {
+  --tw-text-opacity: 1;
+  color: rgb(30 45 83 / var(--tw-text-opacity, 1))
+}
+}
+@media (prefers-color-scheme: dark) {
+.dark\:text-muted-400 {
+  --tw-text-opacity: 1;
+  color: rgb(154 166 182 / var(--tw-text-opacity, 1))
+}
+}
+@media (prefers-color-scheme: dark) {
+.dark\:text-ok-300 {
+  --tw-text-opacity: 1;
+  color: rgb(134 239 172 / var(--tw-text-opacity, 1))
+}
+}
+@media (prefers-color-scheme: dark) {
+.dark\:text-warn-300 {
+  --tw-text-opacity: 1;
+  color: rgb(252 211 77 / var(--tw-text-opacity, 1))
+}
+}
+.disabled\:cursor-not-allowed:disabled {
+  cursor: not-allowed
+}
+.disabled\:opacity-50:disabled {
+  opacity: 0.5
+}
+.focus\:border-line-300:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(178 194 215 / var(--tw-border-opacity, 1))
+}
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px
+}
+.focus\:ring-2:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)
+}
+.focus\:ring-line-300:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(178 194 215 / var(--tw-ring-opacity, 1))
+}
+.hover\:bg-danger-500:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity, 1))
+}
+.hover\:bg-ink-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(52 80 147 / var(--tw-bg-opacity, 1))
+}
+.hover\:bg-surface-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(237 237 237 / var(--tw-bg-opacity, 1))
+}
+.hover\:bg-white\/10:hover {
+  background-color: rgb(255 255 255 / 0.1)
+}
+.hover\:bg-white\/90:hover {
+  background-color: rgb(255 255 255 / 0.9)
+}
+.hover\:shadow-lg:hover {
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+}
+.hover\:text-ink:hover {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity, 1))
+}
+@media (min-width: 768px) {
+.md\:flex {
+  display: flex
+}
+}
+@media (min-width: 768px) {
+.md\:grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr))
+}
+}
+@media (min-width: 768px) {
+.md\:grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr))
+}
+}
+@media (min-width: 768px) {
+.md\:p-10 {
+  padding: 2.5rem
+}
+}
+@media (min-width: 768px) {
+.md\:text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem
+}
+}
+@media (min-width: 768px) {
+.md\:text-6xl {
+  font-size: 3.75rem;
+  line-height: 1
+}
+}
+.placeholder\:text-muted-400::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(154 166 182 / var(--tw-text-opacity, 1))
+}
+.placeholder\:text-muted-400::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(154 166 182 / var(--tw-text-opacity, 1))
+}
+@media (min-width: 640px) {
+.sm\:inline {
+  display: inline
+}
+}
+@media (min-width: 768px) {
+.md\:-mx-10 {
+  margin-left: -2.5rem;
+  margin-right: -2.5rem
+}
+}
+@media (min-width: 768px) {
+.md\:px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem
+}
+}
+@media (min-width: 768px) {
+.md\:py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem
+}
+}
+@media (prefers-color-scheme: dark) {
+.dark\:border-l-danger-600 {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(220 38 38 / var(--tw-border-opacity, 1))
+}
+}
+@media (prefers-color-scheme: dark) {
+.dark\:border-l-muted-400 {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(154 166 182 / var(--tw-border-opacity, 1))
+}
+}
+@media (prefers-color-scheme: dark) {
+.dark\:border-l-ok-600 {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(22 163 74 / var(--tw-border-opacity, 1))
+}
+}
+@media (prefers-color-scheme: dark) {
+.dark\:focus\:border-line-600:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(82 114 158 / var(--tw-border-opacity, 1))
+}
+}
+@media (prefers-color-scheme: dark) {
+.dark\:focus\:ring-line-600:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(82 114 158 / var(--tw-ring-opacity, 1))
+}
+}
+@media (prefers-color-scheme: dark) {
+.dark\:hover\:bg-ink-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(169 185 224 / var(--tw-bg-opacity, 1))
+}
+}
+@media (prefers-color-scheme: dark) {
+.dark\:hover\:bg-surface-800:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(77 77 77 / var(--tw-bg-opacity, 1))
+}
+}
+@media (prefers-color-scheme: dark) {
+.dark\:hover\:text-ink-100:hover {
+  --tw-text-opacity: 1;
+  color: rgb(229 234 246 / var(--tw-text-opacity, 1))
+}
+}
+@media (prefers-color-scheme: dark) {
+.dark\:placeholder\:text-muted-500::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(124 140 161 / var(--tw-text-opacity, 1))
+}
+.dark\:placeholder\:text-muted-500::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(124 140 161 / var(--tw-text-opacity, 1))
+}
+}
+</style></head><body class="min-h-screen bg-canvas text-ink dark:bg-canvas-950 dark:text-ink-100 antialiased"><main id=app class="mx-auto flex w-full max-w-6xl flex-col gap-6 p-6 md:p-10"><header class="sticky top-0 z-40 -mx-6 mb-2 border-b border-line bg-canvas/80 px-6 py-3 backdrop-blur md:-mx-10 md:px-10"><div class="mx-auto flex max-w-6xl items-center justify-between"><div class="flex items-center gap-2"><span class="inline-flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-br from-accent to-info text-sm text-white">A</span><span class="text-lg font-semibold tracking-tight text-ink">Aurora</span></div><nav class="hidden items-center gap-6 text-sm text-muted md:flex"><a class="hover:text-ink" href="#features">Features</a><a class="hover:text-ink" href="#pricing">Pricing</a><a class="hover:text-ink" href="#faq">FAQ</a></nav><div class="flex items-center gap-2"><a class="hidden text-sm text-muted hover:text-ink sm:inline" href="#">Sign in</a><a class="inline-flex items-center justify-center gap-2 rounded-md px-4 py-2 text-sm font-medium transition disabled:opacity-50 disabled:cursor-not-allowed bg-ink text-white hover:bg-ink-700 dark:bg-ink-100 dark:text-ink-900 dark:hover:bg-ink-300" href="#">Start free</a></div></div></header><section class="flex flex-col items-center gap-6 py-16 text-center md:py-24"><span class="inline-flex items-center gap-2 rounded-full border border-line bg-surface px-3 py-1 text-xs font-medium text-muted"><span class="h-1.5 w-1.5 rounded-full bg-accent"></span>New &mdash; Aurora v2 is live</span><h1 class="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-ink md:text-6xl">Ship changelogs your users <span class="bg-gradient-to-r from-accent to-info bg-clip-text text-transparent">actually read</span>.</h1><p class="max-w-xl text-lg leading-7 text-muted">Turn every release into a beautiful, on-brand changelog page and an in-app widget &mdash; in one command. No design work, no maintenance.</p><div class="flex flex-wrap items-center justify-center gap-3"><a class="inline-flex items-center justify-center gap-2 rounded-md px-4 py-2 text-sm font-medium transition disabled:opacity-50 disabled:cursor-not-allowed bg-ink text-white hover:bg-ink-700 dark:bg-ink-100 dark:text-ink-900 dark:hover:bg-ink-300" href="#">Start free &rarr;</a><a class="inline-flex items-center justify-center gap-2 rounded-md px-4 py-2 text-sm font-medium transition disabled:opacity-50 disabled:cursor-not-allowed border border-line dark:border-line-800 bg-surface dark:bg-surface-900 text-ink dark:text-ink-100 hover:bg-surface-100 dark:hover:bg-surface-800" href="#features">See how it works</a></div><p class="text-xs text-muted">Free forever for open source &middot; No credit card &middot; 2-minute setup</p></section><div class="flex flex-col items-center gap-4 border-y border-line py-8"><p class="text-xs font-medium uppercase tracking-widest text-muted">Trusted by fast-moving teams</p><div class="flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-lg font-semibold tracking-tight text-muted/70"><span>Northwind</span><span>Monolith</span><span>Cadence</span><span>Ravel</span><span>Pinecrest</span></div></div><section id="features" class="scroll-mt-20 flex flex-col gap-8 py-16"><div class="flex flex-col items-center gap-3 text-center"><span class="text-sm font-medium uppercase tracking-wider text-accent">Features</span><h2 class="max-w-2xl text-3xl font-bold tracking-tight text-ink">Everything a changelog needs. Nothing it doesn't.</h2></div><div class="grid grid-cols-1 gap-5 md:grid-cols-3"><div class="rounded-2xl border border-line bg-surface p-6 transition hover:shadow-lg"><div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-accent-100 text-accent-700 text-lg">&#9679;</div><h3 class="mb-1.5 text-base font-semibold tracking-tight text-ink">One-command publish</h3><p class="text-sm leading-6 text-muted">Pipe your release notes; get a hosted, themed page and a shareable URL back. It fits your CI, not the other way around.</p></div><div class="rounded-2xl border border-line bg-surface p-6 transition hover:shadow-lg"><div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-info-50 text-info-600 text-lg">&#9679;</div><h3 class="mb-1.5 text-base font-semibold tracking-tight text-ink">In-app widget</h3><p class="text-sm leading-6 text-muted">Drop a two-line snippet and users see what's new without leaving your product. Read state syncs per user.</p></div><div class="rounded-2xl border border-line bg-surface p-6 transition hover:shadow-lg"><div class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-ok-50 text-ok-700 text-lg">&#9679;</div><h3 class="mb-1.5 text-base font-semibold tracking-tight text-ink">On-brand by default</h3><p class="text-sm leading-6 text-muted">Your colors, your fonts, one theme file. Every page and widget stays consistent — no design tickets.</p></div></div><section class="rounded-3xl bg-gradient-to-br from-ink to-ink-800 p-10 text-white"><div class="grid grid-cols-2 gap-8 text-center md:grid-cols-4"><div><p class="text-3xl font-bold tracking-tight">12k+</p><p class="mt-1 text-sm text-white/60">teams shipping</p></div><div><p class="text-3xl font-bold tracking-tight">4.9M</p><p class="mt-1 text-sm text-white/60">updates read</p></div><div><p class="text-3xl font-bold tracking-tight">2 min</p><p class="mt-1 text-sm text-white/60">to first page</p></div><div><p class="text-3xl font-bold tracking-tight">99.99%</p><p class="mt-1 text-sm text-white/60">uptime</p></div></div></section><section class="flex flex-col gap-8 py-16"><div class="flex flex-col items-center gap-3 text-center"><span class="text-sm font-medium uppercase tracking-wider text-accent">How it works</span><h2 class="text-3xl font-bold tracking-tight text-ink">Live in three steps.</h2></div><div class="mx-auto"><ol class="flex flex-wrap items-center gap-3"><li class="flex items-center gap-2"><span class="flex h-6 w-6 items-center justify-center rounded-full text-xs font-medium bg-ink text-white dark:bg-ink-100 dark:text-ink-900">1</span><span class="text-sm text-muted dark:text-muted-400">Connect your repo</span></li><span class="h-px w-6 bg-line dark:bg-surface-700"></span><li class="flex items-center gap-2"><span class="flex h-6 w-6 items-center justify-center rounded-full text-xs font-medium border-2 border-ink text-ink dark:border-ink-100 dark:text-ink-100">2</span><span class="text-sm font-medium text-ink dark:text-ink-100">Write a release</span></li><span class="h-px w-6 bg-line dark:bg-surface-700"></span><li class="flex items-center gap-2"><span class="flex h-6 w-6 items-center justify-center rounded-full text-xs font-medium border border-line-300 dark:border-line-700 text-muted-400">3</span><span class="text-sm text-muted-400">Share the page</span></li></ol></div></section><section class="flex flex-col gap-8 py-8"><div class="grid grid-cols-1 gap-5 md:grid-cols-3"><figure class="flex flex-col gap-4 rounded-2xl border border-line bg-surface p-6"><blockquote class="text-sm leading-6 text-ink">&ldquo;We replaced a hand-maintained Notion doc and a stale RSS feed with one Aurora page. Reads tripled in a week.&rdquo;</blockquote><figcaption class="flex items-center gap-3"><span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-accent-100 text-xs font-semibold uppercase text-accent-700">PN</span><div><p class="text-sm font-medium text-ink">Priya Nair</p><p class="text-xs text-muted">PN</p></div></figcaption></figure><figure class="flex flex-col gap-4 rounded-2xl border border-line bg-surface p-6"><blockquote class="text-sm leading-6 text-ink">&ldquo;The in-app widget is the thing. Our users finally notice the features we ship.&rdquo;</blockquote><figcaption class="flex items-center gap-3"><span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-accent-100 text-xs font-semibold uppercase text-accent-700">MB</span><div><p class="text-sm font-medium text-ink">Marcus Bell</p><p class="text-xs text-muted">MB</p></div></figcaption></figure><figure class="flex flex-col gap-4 rounded-2xl border border-line bg-surface p-6"><blockquote class="text-sm leading-6 text-ink">&ldquo;Setup was genuinely two minutes. It just matched our brand and got out of the way.&rdquo;</blockquote><figcaption class="flex items-center gap-3"><span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-accent-100 text-xs font-semibold uppercase text-accent-700">LO</span><div><p class="text-sm font-medium text-ink">Lena Ortiz</p><p class="text-xs text-muted">LO</p></div></figcaption></figure></div></section><section id="pricing" class="scroll-mt-20 flex flex-col gap-8 py-16"><div class="flex flex-col items-center gap-3 text-center"><span class="text-sm font-medium uppercase tracking-wider text-accent">Pricing</span><h2 class="text-3xl font-bold tracking-tight text-ink">Simple, honest pricing.</h2></div><div class="grid grid-cols-1 items-start gap-6 md:grid-cols-3"><div class="relative flex flex-col gap-5 rounded-2xl bg-surface p-7 border border-line"><div><p class="text-sm font-medium uppercase tracking-wider text-accent">Starter</p><p class="mt-1 text-sm text-muted">For side projects</p></div><div class="flex items-end gap-1"><span class="text-4xl font-bold tracking-tight text-ink">$0</span><span class="pb-1 text-sm text-muted">/mo</span></div><ul class="flex flex-col gap-2.5 text-sm text-ink"><li class="flex items-center gap-2"><span class="text-accent">&#10003;</span>1 changelog</li><li class="flex items-center gap-2"><span class="text-accent">&#10003;</span>Hosted page</li><li class="flex items-center gap-2"><span class="text-accent">&#10003;</span>Community support</li></ul><a class="inline-flex items-center justify-center gap-2 rounded-md px-4 py-2 text-sm font-medium transition disabled:opacity-50 disabled:cursor-not-allowed border border-line dark:border-line-800 bg-surface dark:bg-surface-900 text-ink dark:text-ink-100 hover:bg-surface-100 dark:hover:bg-surface-800 justify-center" href="#">Start free</a></div><div class="relative flex flex-col gap-5 rounded-2xl bg-surface p-7 border-2 border-accent shadow-xl"><span class="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-accent px-3 py-0.5 text-xs font-medium uppercase tracking-wider text-white">most popular</span><div><p class="text-sm font-medium uppercase tracking-wider text-accent">Team</p><p class="mt-1 text-sm text-muted">For growing products</p></div><div class="flex items-end gap-1"><span class="text-4xl font-bold tracking-tight text-ink">$29</span><span class="pb-1 text-sm text-muted">/mo</span></div><ul class="flex flex-col gap-2.5 text-sm text-ink"><li class="flex items-center gap-2"><span class="text-accent">&#10003;</span>Unlimited changelogs</li><li class="flex items-center gap-2"><span class="text-accent">&#10003;</span>In-app widget</li><li class="flex items-center gap-2"><span class="text-accent">&#10003;</span>Custom domain</li><li class="flex items-center gap-2"><span class="text-accent">&#10003;</span>Analytics</li></ul><a class="inline-flex items-center justify-center gap-2 rounded-md px-4 py-2 text-sm font-medium transition disabled:opacity-50 disabled:cursor-not-allowed bg-ink text-white hover:bg-ink-700 dark:bg-ink-100 dark:text-ink-900 dark:hover:bg-ink-300 justify-center" href="#">Start free</a></div><div class="relative flex flex-col gap-5 rounded-2xl bg-surface p-7 border border-line"><div><p class="text-sm font-medium uppercase tracking-wider text-accent">Scale</p><p class="mt-1 text-sm text-muted">For big teams</p></div><div class="flex items-end gap-1"><span class="text-4xl font-bold tracking-tight text-ink">$99</span><span class="pb-1 text-sm text-muted">/mo</span></div><ul class="flex flex-col gap-2.5 text-sm text-ink"><li class="flex items-center gap-2"><span class="text-accent">&#10003;</span>Everything in Team</li><li class="flex items-center gap-2"><span class="text-accent">&#10003;</span>SSO + roles</li><li class="flex items-center gap-2"><span class="text-accent">&#10003;</span>Priority support</li><li class="flex items-center gap-2"><span class="text-accent">&#10003;</span>SLA</li></ul><a class="inline-flex items-center justify-center gap-2 rounded-md px-4 py-2 text-sm font-medium transition disabled:opacity-50 disabled:cursor-not-allowed border border-line dark:border-line-800 bg-surface dark:bg-surface-900 text-ink dark:text-ink-100 hover:bg-surface-100 dark:hover:bg-surface-800 justify-center" href="#">Start free</a></div></div></section><section id="faq" class="scroll-mt-20 flex flex-col gap-6 py-16"><div class="flex flex-col items-center gap-3 text-center"><span class="text-sm font-medium uppercase tracking-wider text-accent">FAQ</span><h2 class="text-3xl font-bold tracking-tight text-ink">Questions, answered.</h2></div><div class="mx-auto w-full max-w-2xl"><div class="flex flex-col"><details class="group border-b border-line dark:border-line-800 py-3"><summary class="flex cursor-pointer items-center justify-between text-sm font-medium text-ink dark:text-ink-100">Do I need to design anything?<span class="text-muted-400">+</span></summary><p class="pt-2 text-sm leading-6 text-muted dark:text-muted-400">No. Aurora renders every page and widget from your brand theme — one file, applied everywhere. You never touch CSS.</p></details><details class="group border-b border-line dark:border-line-800 py-3"><summary class="flex cursor-pointer items-center justify-between text-sm font-medium text-ink dark:text-ink-100">Can I use my own domain?<span class="text-muted-400">+</span></summary><p class="pt-2 text-sm leading-6 text-muted dark:text-muted-400">Yes, on Team and up. Point a CNAME and your changelog lives at changelog.yourdomain.com.</p></details><details class="group border-b border-line dark:border-line-800 py-3"><summary class="flex cursor-pointer items-center justify-between text-sm font-medium text-ink dark:text-ink-100">Is there a free plan?<span class="text-muted-400">+</span></summary><p class="pt-2 text-sm leading-6 text-muted dark:text-muted-400">Yes — Starter is free forever, and every plan is free for open-source projects.</p></details><details class="group border-b border-line dark:border-line-800 py-3"><summary class="flex cursor-pointer items-center justify-between text-sm font-medium text-ink dark:text-ink-100">How do users see updates in-app?<span class="text-muted-400">+</span></summary><p class="pt-2 text-sm leading-6 text-muted dark:text-muted-400">A two-line snippet renders a 'What's new' widget; read state is tracked per user so nobody sees the same update twice.</p></details></div></div><section class="my-8 overflow-hidden rounded-3xl bg-gradient-to-br from-accent-600 to-accent-800 px-8 py-14 text-center text-white"><h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight md:text-4xl">Your next release deserves a better home.</h2><p class="mx-auto mt-3 max-w-lg text-white/80">Start free in two minutes. Bring your brand, ship your changelog, and watch reads climb.</p><div class="mt-6 flex flex-wrap items-center justify-center gap-3"><a class="inline-flex items-center justify-center rounded-md bg-white px-5 py-2.5 text-sm font-medium text-accent-700 transition hover:bg-white/90" href="#">Start free &rarr;</a><a class="inline-flex items-center justify-center rounded-md border border-white/30 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-white/10" href="#">Talk to us</a></div></section><footer class="mt-10 flex flex-wrap items-center justify-between gap-2 border-t border-line dark:border-line-800 pt-5 text-xs text-muted dark:text-muted-400"><span>&copy; 2026 Aurora &mdash; a demo landing built with machin-web-ui. Not a real product.</span><nav class="flex items-center gap-4"><a class="transition hover:text-ink dark:hover:text-ink-100" href="#features">Features</a><a class="transition hover:text-ink dark:hover:text-ink-100" href="#pricing">Pricing</a><a class="transition hover:text-ink dark:hover:text-ink-100" href="#faq">FAQ</a><a class="transition hover:text-ink dark:hover:text-ink-100" href="https://github.com/javimosch/machin-web-ui">machin-web-ui</a></nav></footer></main><script type=module>// host.js — the GENERIC JS host (embedded into the server binary at build
+// time). App-agnostic: instantiate the wasm, wire the reactive runtime's DOM
+// ops, hydrate, and forward [data-action] clicks to same-named wasm exports.
+// Adding components or behavior changes only the MFL — this file rarely changes.
+const dec = new TextDecoder();
+let mem;
+const cstr = (p) => { const b = new Uint8Array(mem.buffer); let e = p; while (b[e]) e++; return dec.decode(b.subarray(p, e)); };
+
+const env = {
+  // reactive runtime → DOM
+  dom_mount: (r, h) => { document.getElementById(cstr(r)).innerHTML = cstr(h); },
+  dom_patch: (s, v) => { const el = document.querySelector('[data-s="' + cstr(s) + '"]'); if (el) el.textContent = cstr(v); },
+  list_insert: (c, k, h) => { const li = document.createElement('li'); li.dataset.k = cstr(k); li.innerHTML = cstr(h); document.getElementById(cstr(c)).appendChild(li); },
+  list_remove: (c, k) => { const el = document.querySelector('#' + cstr(c) + ' > [data-k="' + cstr(k) + '"]'); if (el) el.remove(); },
+  list_order: (c, csv) => { const cont = document.getElementById(cstr(c)); for (const k of cstr(csv).split(',').filter(Boolean)) { const el = cont.querySelector('[data-k="' + k + '"]'); if (el) cont.appendChild(el); } },
+  // app effects
+  toast_show: (id) => { const el = document.getElementById(cstr(id)); if (!el) return; el.classList.remove('hidden'); clearTimeout(el._t); el._t = setTimeout(() => el.classList.add('hidden'), 2500); },
+};
+// no-op WASI shim (imported but never called)
+const wasi = { fd_write: () => 0, fd_seek: () => 0, fd_close: () => 0, fd_fdstat_get: () => 0 };
+
+const { instance } = await WebAssembly.instantiateStreaming(fetch('app.wasm'), { env, wasi_snapshot_preview1: wasi });
+mem = instance.exports.memory;
+instance.exports._initialize?.();
+instance.exports.start();
+
+// delegate clicks: <button data-action="bump" data-arg="0"> calls exports.bump(0n)
+document.body.addEventListener('click', (e) => {
+  const b = e.target.closest('[data-action]');
+  if (b) instance.exports[b.dataset.action]?.(BigInt(b.dataset.arg ?? 0));
+});
+</script></body></html>

@@ -1,0 +1,133 @@
+// models.src — a polished demo landing (fictional product "Aurora"), built
+// entirely from machin-web-ui components + gradient utilities, themed violet.
+// Proves the framework can craft a pretty marketing page, not just dashboards.
+
+func app_name() (s) { s = "Aurora" }
+
+func feat(icon_bg, title, body) (h) {
+    h = "<div class=\"rounded-2xl border border-line bg-surface p-6 transition hover:shadow-lg\">"
+    h = h + "<div class=\"mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl " + icon_bg + " text-lg\">&#9679;</div>"
+    h = h + "<h3 class=\"mb-1.5 text-base font-semibold tracking-tight text-ink\">" + title + "</h3>"
+    h = h + "<p class=\"text-sm leading-6 text-muted\">" + body + "</p></div>"
+}
+
+func price(name, tag, amount, per, features, highlighted) (h) {
+    ring := "border border-line"
+    badge := ""
+    if highlighted {
+        ring = "border-2 border-accent shadow-xl"
+        badge = "<span class=\"absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-accent px-3 py-0.5 text-xs font-medium uppercase tracking-wider text-white\">most popular</span>"
+    }
+    h = "<div class=\"relative flex flex-col gap-5 rounded-2xl bg-surface p-7 " + ring + "\">" + badge
+    h = h + "<div><p class=\"text-sm font-medium uppercase tracking-wider text-accent\">" + name + "</p>"
+    h = h + "<p class=\"mt-1 text-sm text-muted\">" + tag + "</p></div>"
+    h = h + "<div class=\"flex items-end gap-1\"><span class=\"text-4xl font-bold tracking-tight text-ink\">" + amount + "</span><span class=\"pb-1 text-sm text-muted\">" + per + "</span></div>"
+    h = h + "<ul class=\"flex flex-col gap-2.5 text-sm text-ink\">"
+    for _, f := range features {
+        h = h + "<li class=\"flex items-center gap-2\"><span class=\"text-accent\">&#10003;</span>" + f + "</li>"
+    }
+    h = h + "</ul>"
+    variant := "ghost"
+    if highlighted { variant = "primary" }
+    h = h + "<a class=\"" + ui_button_classes(variant) + " justify-center\" href=\"#\">Start free</a></div>"
+}
+
+func quote(text, who, role) (h) {
+    h = "<figure class=\"flex flex-col gap-4 rounded-2xl border border-line bg-surface p-6\">"
+    h = h + "<blockquote class=\"text-sm leading-6 text-ink\">&ldquo;" + text + "&rdquo;</blockquote>"
+    h = h + "<figcaption class=\"flex items-center gap-3\">"
+    h = h + "<span class=\"inline-flex h-9 w-9 items-center justify-center rounded-full bg-accent-100 text-xs font-semibold uppercase text-accent-700\">" + role + "</span>"
+    h = h + "<div><p class=\"text-sm font-medium text-ink\">" + who + "</p><p class=\"text-xs text-muted\">" + role + "</p></div>"
+    h = h + "</figcaption></figure>"
+}
+
+func app_view(unused) (h) {
+    // navbar
+    h = "<header class=\"sticky top-0 z-40 -mx-6 mb-2 border-b border-line bg-canvas/80 px-6 py-3 backdrop-blur md:-mx-10 md:px-10\">"
+    h = h + "<div class=\"mx-auto flex max-w-6xl items-center justify-between\">"
+    h = h + "<div class=\"flex items-center gap-2\"><span class=\"inline-flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-br from-accent to-info text-sm text-white\">A</span><span class=\"text-lg font-semibold tracking-tight text-ink\">Aurora</span></div>"
+    h = h + "<nav class=\"hidden items-center gap-6 text-sm text-muted md:flex\"><a class=\"hover:text-ink\" href=\"#features\">Features</a><a class=\"hover:text-ink\" href=\"#pricing\">Pricing</a><a class=\"hover:text-ink\" href=\"#faq\">FAQ</a></nav>"
+    h = h + "<div class=\"flex items-center gap-2\"><a class=\"hidden text-sm text-muted hover:text-ink sm:inline\" href=\"#\">Sign in</a><a class=\"" + ui_button_classes("primary") + "\" href=\"#\">Start free</a></div>"
+    h = h + "</div></header>"
+
+    // hero
+    hero := "<section class=\"flex flex-col items-center gap-6 py-16 text-center md:py-24\">"
+    hero = hero + "<span class=\"inline-flex items-center gap-2 rounded-full border border-line bg-surface px-3 py-1 text-xs font-medium text-muted\"><span class=\"h-1.5 w-1.5 rounded-full bg-accent\"></span>New &mdash; Aurora v2 is live</span>"
+    hero = hero + "<h1 class=\"max-w-3xl text-4xl font-bold leading-tight tracking-tight text-ink md:text-6xl\">Ship changelogs your users <span class=\"bg-gradient-to-r from-accent to-info bg-clip-text text-transparent\">actually read</span>.</h1>"
+    hero = hero + "<p class=\"max-w-xl text-lg leading-7 text-muted\">Turn every release into a beautiful, on-brand changelog page and an in-app widget &mdash; in one command. No design work, no maintenance.</p>"
+    hero = hero + "<div class=\"flex flex-wrap items-center justify-center gap-3\"><a class=\"" + ui_button_classes("primary") + "\" href=\"#\">Start free &rarr;</a><a class=\"" + ui_button_classes("ghost") + "\" href=\"#features\">See how it works</a></div>"
+    hero = hero + "<p class=\"text-xs text-muted\">Free forever for open source &middot; No credit card &middot; 2-minute setup</p>"
+    hero = hero + "</section>"
+    h = h + hero
+
+    // logo cloud
+    logos := "<div class=\"flex flex-col items-center gap-4 border-y border-line py-8\"><p class=\"text-xs font-medium uppercase tracking-widest text-muted\">Trusted by fast-moving teams</p>"
+    logos = logos + "<div class=\"flex flex-wrap items-center justify-center gap-x-10 gap-y-3 text-lg font-semibold tracking-tight text-muted/70\">"
+    for _, n := range []string{"Northwind", "Monolith", "Cadence", "Ravel", "Pinecrest"} { logos = logos + "<span>" + n + "</span>" }
+    logos = logos + "</div></div>"
+    h = h + logos
+
+    // features (bento)
+    feats := "<section id=\"features\" class=\"scroll-mt-20 flex flex-col gap-8 py-16\">"
+    feats = feats + "<div class=\"flex flex-col items-center gap-3 text-center\"><span class=\"text-sm font-medium uppercase tracking-wider text-accent\">Features</span><h2 class=\"max-w-2xl text-3xl font-bold tracking-tight text-ink\">Everything a changelog needs. Nothing it doesn't.</h2></div>"
+    feats = feats + "<div class=\"grid grid-cols-1 gap-5 md:grid-cols-3\">"
+    feats = feats + feat("bg-accent-100 text-accent-700", "One-command publish", "Pipe your release notes; get a hosted, themed page and a shareable URL back. It fits your CI, not the other way around.")
+    feats = feats + feat("bg-info-50 text-info-600", "In-app widget", "Drop a two-line snippet and users see what's new without leaving your product. Read state syncs per user.")
+    feats = feats + feat("bg-ok-50 text-ok-700", "On-brand by default", "Your colors, your fonts, one theme file. Every page and widget stays consistent — no design tickets.")
+    feats = feats + "</div>"
+    h = h + feats
+
+    // stats band
+    stats := "<section class=\"rounded-3xl bg-gradient-to-br from-ink to-ink-800 p-10 text-white\"><div class=\"grid grid-cols-2 gap-8 text-center md:grid-cols-4\">"
+    stats = stats + "<div><p class=\"text-3xl font-bold tracking-tight\">12k+</p><p class=\"mt-1 text-sm text-white/60\">teams shipping</p></div>"
+    stats = stats + "<div><p class=\"text-3xl font-bold tracking-tight\">4.9M</p><p class=\"mt-1 text-sm text-white/60\">updates read</p></div>"
+    stats = stats + "<div><p class=\"text-3xl font-bold tracking-tight\">2 min</p><p class=\"mt-1 text-sm text-white/60\">to first page</p></div>"
+    stats = stats + "<div><p class=\"text-3xl font-bold tracking-tight\">99.99%</p><p class=\"mt-1 text-sm text-white/60\">uptime</p></div>"
+    stats = stats + "</div></section>"
+    h = h + stats
+
+    // how it works
+    how := "<section class=\"flex flex-col gap-8 py-16\"><div class=\"flex flex-col items-center gap-3 text-center\"><span class=\"text-sm font-medium uppercase tracking-wider text-accent\">How it works</span><h2 class=\"text-3xl font-bold tracking-tight text-ink\">Live in three steps.</h2></div>"
+    how = how + "<div class=\"mx-auto\">" + ui_steps([]string{"Connect your repo", "Write a release", "Share the page"}, 2) + "</div>"
+    how = how + "</section>"
+    h = h + how
+
+    // testimonials
+    tst := "<section class=\"flex flex-col gap-8 py-8\"><div class=\"grid grid-cols-1 gap-5 md:grid-cols-3\">"
+    tst = tst + quote("We replaced a hand-maintained Notion doc and a stale RSS feed with one Aurora page. Reads tripled in a week.", "Priya Nair", "PN")
+    tst = tst + quote("The in-app widget is the thing. Our users finally notice the features we ship.", "Marcus Bell", "MB")
+    tst = tst + quote("Setup was genuinely two minutes. It just matched our brand and got out of the way.", "Lena Ortiz", "LO")
+    tst = tst + "</div></section>"
+    h = h + tst
+
+    // pricing
+    pr := "<section id=\"pricing\" class=\"scroll-mt-20 flex flex-col gap-8 py-16\"><div class=\"flex flex-col items-center gap-3 text-center\"><span class=\"text-sm font-medium uppercase tracking-wider text-accent\">Pricing</span><h2 class=\"text-3xl font-bold tracking-tight text-ink\">Simple, honest pricing.</h2></div>"
+    pr = pr + "<div class=\"grid grid-cols-1 items-start gap-6 md:grid-cols-3\">"
+    pr = pr + price("Starter", "For side projects", "$0", "/mo", []string{"1 changelog", "Hosted page", "Community support"}, false)
+    pr = pr + price("Team", "For growing products", "$29", "/mo", []string{"Unlimited changelogs", "In-app widget", "Custom domain", "Analytics"}, true)
+    pr = pr + price("Scale", "For big teams", "$99", "/mo", []string{"Everything in Team", "SSO + roles", "Priority support", "SLA"}, false)
+    pr = pr + "</div></section>"
+    h = h + pr
+
+    // FAQ
+    faq := "<section id=\"faq\" class=\"scroll-mt-20 flex flex-col gap-6 py-16\"><div class=\"flex flex-col items-center gap-3 text-center\"><span class=\"text-sm font-medium uppercase tracking-wider text-accent\">FAQ</span><h2 class=\"text-3xl font-bold tracking-tight text-ink\">Questions, answered.</h2></div>"
+    faq = faq + "<div class=\"mx-auto w-full max-w-2xl\">" + ui_accordion([]string{
+        "Do I need to design anything?", "No. Aurora renders every page and widget from your brand theme — one file, applied everywhere. You never touch CSS.",
+        "Can I use my own domain?", "Yes, on Team and up. Point a CNAME and your changelog lives at changelog.yourdomain.com.",
+        "Is there a free plan?", "Yes — Starter is free forever, and every plan is free for open-source projects.",
+        "How do users see updates in-app?", "A two-line snippet renders a 'What's new' widget; read state is tracked per user so nobody sees the same update twice."}) + "</div>"
+    h = h + faq
+
+    // big CTA
+    cta := "<section class=\"my-8 overflow-hidden rounded-3xl bg-gradient-to-br from-accent-600 to-accent-800 px-8 py-14 text-center text-white\">"
+    cta = cta + "<h2 class=\"mx-auto max-w-2xl text-3xl font-bold tracking-tight md:text-4xl\">Your next release deserves a better home.</h2>"
+    cta = cta + "<p class=\"mx-auto mt-3 max-w-lg text-white/80\">Start free in two minutes. Bring your brand, ship your changelog, and watch reads climb.</p>"
+    cta = cta + "<div class=\"mt-6 flex flex-wrap items-center justify-center gap-3\"><a class=\"inline-flex items-center justify-center rounded-md bg-white px-5 py-2.5 text-sm font-medium text-accent-700 transition hover:bg-white/90\" href=\"#\">Start free &rarr;</a><a class=\"inline-flex items-center justify-center rounded-md border border-white/30 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-white/10\" href=\"#\">Talk to us</a></div>"
+    cta = cta + "</section>"
+    h = h + cta
+
+    // footer
+    h = h + ui_footer("&copy; 2026 Aurora &mdash; a demo landing built with machin-web-ui. Not a real product.",
+        []string{"Features", "Pricing", "FAQ", "machin-web-ui"},
+        []string{"#features", "#pricing", "#faq", "https://github.com/javimosch/machin-web-ui"})
+}

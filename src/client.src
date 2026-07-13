@@ -1,0 +1,3 @@
+// client.src — the wasm client. This landing is static content; the client
+// just hydrates the server-rendered markup.
+export func start() { hydrate(app_view("")) }
